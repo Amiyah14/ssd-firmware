@@ -1,0 +1,608 @@
+IBM pSeries Servers - Microcode Update for Ultrastar 146LZX 9/18/36/73/146 GB - 
+
+IBM Power Systems AIX/Linux 
+Microcode Update for PM9A5 
+
+U.2 NVMe SSD
+
+800 GB 
+Microcode Level SN56
+
+Microcode backlevel from SN55, SN54 OR SN53 to previous level(s) is not 
+allowed.
+
+DATE: October 7, 2022
+
+ 
+
+Table of Contents
+
+1. General Information
+
+1.1     Disk Drives Affected
+
+1.2 Microcode Change History
+
+2.  AIX and VIOS(PowerVM Virtual I/O Server) Operating System
+
+2.1 Installation Time
+
+2.2 Determine Drive Model, FRU&PN and Current Microcode Level
+
+2.3.1 Internet AIX self extracting file (.bin)
+
+2.3.2 Internet RPM package
+
+2.4 Microcode Download Procedure
+
+3.   Linux Operating System
+
+3.1 Determine the Current Microcode Level for Linux:
+
+3.2 Downloading and Unpacking the Firmware Update Package
+
+3.3 Verifying microcode before download and notes
+
+3.4 Microcode Download Procedure-NVMe Adapters for Linux
+
+=============================================================== 
+
+1. General Information 
+
+The Microcode files provided in this package are for SAS disk drives used in 
+IBM system P Servers
+
+with AIX or Linux operating systems
+
+1.1    Disk Drives Affected  
+
+Below is the list of microcode files in this package:
+
+NOTE: To insure the integrity of microcode files, please make sure the 
+checksum value is correct after extraction 
+
+ 
+
+ 
+
+Size
+
+MFG ID
+
+FRU#
+
+P/N (VPD)
+
+Microcode File Name
+
+Check Sum
+
+800GB
+
+S6HHNE0R200107
+
+02YC660
+
+02YC658
+
+A1800110.534e3536
+
+46127
+
+02YC661
+
+02YC659
+
+1.2 Microcode Change History 
+
+Release date
+
+Code level
+
+Severity/
+
+Impact
+
+Change Description
+
+October 2022
+
+SN56
+
+Function/
+
+ATT
+
+-Added FW support for SED Boot
+ -Fixed the Wear-Leveling possibility due to invalid Min/Max EC gap.
+
+June 2022
+
+SN55
+
+Function/
+
+ATT
+
+-Changes made in drive FW ?Power On Sequence? so that it will  
+  configure on a cold boot in certain IBM system.
+ - Other fixes and enhancements
+
+February 2022
+
+SN54
+
+Function/
+
+ATT
+
+-Optimization Read Recovery Time for NAND WL
+ -Optimization Patrol read for NAND
+ -Revised Debug-ability Guide
+
+November 2021
+
+SN53 (1)
+
+Function/
+
+ATT
+
+Fixed: 
+
+-Device Hang due to LPN access
+
+-SRAM UECC
+
+-TCG Access Control Authority Check Error
+
+-Improve for HIL/Security Meta Mismatch at Read Only Mode
+
+Enhancements:
+
+-TryLimit: Debug capability added
+
+-Improvement Error mode for PLP Fail
+
+August 2021
+
+SN52
+
+New/
+
+New
+
+Initial Release
+
+Note 1: Microcode backlevel from SN55,SN54 or SN53 to previous level(s) is 
+not allowed.
+
+=============================================================== 
+
+2.  AIX and VIOS(PowerVM Virtual I/O Server) Operating System
+
+Note: For VIOS systems, microcode of shared physical I/O resources can only 
+be updated from VIOS partition.
+
+To update disk drive microcode, from VIOS partition, enter the following 
+command:      
+
+oem_setup_env    
+
+Then follow the instruction in section 2.3 to transfer/extract the microcode 
+file, and section 2.4.1 to update the disk drive code. 
+
+2.1 Installation Time 
+
+Approximately 20 minutes if using Diagnostics CD; Approximately 5 
+minutes/drive using AIX concurrent diagnostics. 
+   
+
+2.2 Determine Drive Model, FRU&PN and Current Microcode Level
+ To see the nvme type and current microcode level, execute the following 
+command:
+lscfg ?vl nvme*
+
+ 
+
+ Vital Product Data (VPD)
+
+# lscfg -vl nvme0
+
+         nvme0            U78D4.ND1.CSS1BH1-P2-C3  PCIe4 x4 NVMe Flash Adapter
+     800GB NVMe Gen4 U.2 Slim SSD            :
+
+        Part Number.................01CM542
+
+        EC Level....................P45228
+
+        FRU Number..................02YC660
+
+        Product Specific.(AN).......02YC658
+
+        Feature Code/Marketing ID...EC7Q
+
+        Customer Card ID Number.....5948
+
+        Serial Number...............89YEU038
+
+        Product Specific.(Z0).......1014068E
+
+        Product Specific.(Z1).......2.4
+
+        Product Specific.(Z2).......800
+
+        Product Specific.(Z3).......3.50
+
+        Product Specific.(Z4).......0
+
+        Product Specific.(Z5).......00
+
+        Product Specific.(Z6).......A1800110
+
+        Product Specific.(Z7).......0YA
+
+        Product Specific.(Z8).......2900
+
+        Product Specific.(Z9).......08
+
+        Product Specific.(ZA).......005A
+
+        Product Specific.(ZB).......0081
+
+        Product Specific.(ZC).......00
+
+        Manufacture ID..............S6HHNE0R200107
+
+        ROM Level.(alterable).......REV.SN56
+
+        Product Specific.(RV)........
+
+        Hardware Location Code......U78D4.ND1.CSS1BH1-P2-C3
+
+ 
+
+You can also use lsmcode to find the microcode level:
+
+lsmcode ?rd nvme0
+
+A1800110.534e3536
+
+Note that lsmcode output FW level is displayed as ASCII/Hex
+
+53 = S
+
+4e = N
+
+35 = 5
+
+36= 6
+
+===============================================================
+
+2.3 Transferring and Unpacking the Microcode Update Package
+
+2.3.1 Internet AIX self extracting file (.bin)
+
+a) Make a directory on an AIX system to receive the AIX format file. 
+     Enter:      mkdir /tmp/fwupdate 
+ b) Transfer the AIX format file to /tmp/fwupdate directory (using "Save as 
+...").
+     You'll see the filename is  PM9A5.bin 
+ c) Unpack the file by executing the instructions below. 
+   Enter the commands: 
+   cd /tmp/fwupdate 
+   chmod +x PM9A5.bin
+  ./PM9A5.bin
+ [Don't overlook the periods (.) in the above command.] 
+
+The directory PM9A5 with microcode files listed in section 1.1 will be added 
+to /tmp/fwupdate. 
+ d-Enter the following command to copy the microcode files to " /etc/microcode 
+"directory : 
+    cp /tmp/fwupdate/ PM9A5/*   /etc/microcode 
+
+2.3.2 Internet RPM package 
+
+Note: The instructions that follow are specific AIX commands. AIX commands 
+are CASE (lower and upper) SENSITIVE,
+
+and must be entered exactly as shown, including filenames. 
+
+a) Make a directory on an AIX system to receive the RPM format file. 
+     Enter:      mkdir /tmp/microcode 
+
+b) Transfer the RPM format file to the /tmp/microcode directory. 
+     You'll see the filename is PM9A5-SN56-AIX.rpm 
+
+c) Unpack the file by executing the instructions below: 
+     Enter the commands: 
+         rpm -ihv --ignoreos  --force PM9A5-SN56-AIX.rpm   ;(please note, 
+there are two dashes)
+
+The file size and checksum will be verified. 
+
+The microcode files will be added to /etc/microcode/ 
+ d) If you are using stand alone AIX diag (bootable USB flash or CD/DVD) to 
+update drive?s microcode, transfer microcode files to a USB drive and place it 
+in ?/etc/microcode? directory. 
+    Please refer to this page for USB flash drive usage   
+    
+https://www.ibm.com/support/pages/using-and-taking-advantage-usb-devices-and-aix
+
+ 
+
+========================================================
+
+2.4 Microcode Download Procedure 
+
+Warning: Do not power off the system or the drive during microcode download 
+as this may permanently damage the disk drive
+
+NOTE: Please save current and older versions of the microcode update files in 
+case you need to restore your system.
+
+Caution: The microcode download process is nondestructive to the storage 
+device; however, as a precaution, ensure that a backup operation has been 
+performed on the affected systems PRIOR to the microcode installation.
+
+Can microcode be installed Concurrently?  YES
+Is system reboot needed to activate the microcode: Yes if stand alone 
+diagnostics CD is used, NO if concurrent diagnostics is used.
+
+Installation Time: Approximately 20 minutes/drive if stand alone diagnostics 
+is used(using Diagnostics CD); Approximately 5 minutes/drive if concurrent 
+diagnostics is used.
+
+2.4.1 Concurrent Download
+
+1. No system power cycle OR a partition reboot is required prior to microcode 
+download is microcode download is done concurrently.
+
+2. When system comes up, within 24 hours of reboot, Type diag at the AIX 
+prompt.
+ 3. Select the "Task Selection" from diagnostics menu. 
+ 4. Select "Microcode Download" from "Task Selection" menu. 
+ 5. Select resource that microcode will be applied to (i.e.; nvme0), then 
+press "F7" tocommit.. 
+ 6- A small screen displays the message " *** NOTICE***  The microcode 
+installation occurs while the attached drives are available for use..... "
+     Press enter to continue 
+ 7.  Select the source for microcode, use arrow key to go up/down, Enter to 
+continue.
+                       /etc/microcode 
+                       usb mass storage
+
+    - Use /etc/microcode if microcode file is in the system 
+     - Use ?usb mass storage? if using usb flash drive
+
+8- Display shows a list of microcodes available for the selected drive, 
+highlight option "M 534e3536", the latest microcode for the drive and press 
+ENTER.
+   A message may warn you that current level of microcode is not available on 
+the media, press ENTER to continue.
+
+9. You will receive a msg. "Current Microcode is...." and "Download has 
+completed successfully"
+        (this will take a several minutes) 
+ 10. Return to the Tasks Selection menu and repeat this procedure for each nvme
+ (in the same partition) that requires this microcode.
+ 11. Exit diagnostic
+
+
+
+2.4.2 Standalone (Service Mode) Download
+
+This procedure is used for all drives including rootvg or paging space drives 
+ 1. Properly shutdown the system. 
+ 2. Boot up the system in standalone diagnostics mode with the AIX diag CD/DVD 
+or USB Thumb drive
+ 3. Select the "Task Selection" from diagnostics menu. 
+ 4. Select "Microcode Download" from "Task Selection" menu. 
+ 5. Select resource that microcode will be applied to and PRESS ENTER. 
+6. Press "F7" to commit. 
+      (The current microcode level of the resource you selected earlier will 
+be displayed at the top of the screen) 
+ 7. Make the following selections on the next screen: 
+    file system
+      /etc/microcode
+      usb mass storage    (ISO 9660 file system format)
+
+8. You will receive a msg. "Current Microcode is...." and "Download has 
+completed successfully" 
+       (this may take a few minutes) 
+ 9. Return to the Tasks Selection menu and repeat this procedure for each hard 
+disk that requires this microcode.
+ 10. Exit diagnostic and reboot system in normal mode
+
+                             
+
+======================================================
+
+3.   Linux Operating System
+
+ 
+
+Note: The following procedure is for Red Hat Linux, 
+
+please use microcode file package PM9A5-SN52-LINUX.tgz for Ubuntu
+
+tar -C-xzvf PM9A5-SN56-LINUX.tgz
+
+
+Red Hat Enterprise Linux for IBM Power LE
+
+ 
+
+3.1 Determine the Current Microcode Level for Linux:
+
+These steps assume you are logged in with root permissions.
+
+ 
+
+Prerequisites for Red Hat Linux:
+
+Use the ibm-power-repo to configure the repositories and then use yum to 
+download the nvme-cli package.
+
+http://www14.software.ibm.com/support/customercare/sas/f/lopdiags/home.html
+
+ 
+
+1. Download the IBM Linux on Power Tools Repository configuration RPM file 
+available at:
+
+http://www14.software.ibm.com/webapp/set2/sas/f/lopdiags/yum.html
+
+ 
+
+2. Copy the file to the target system and install the RPM
+
+# rpm -ivh ibm-power-repo-latest.noarch.rpm
+
+ 
+
+3. To add the Tools Repository to the package management configuration, run 
+the following command as root user (or with root privilege) and accept the 
+Licensing agreement.
+
+# /opt/ibm/lop/configure
+
+ 
+
+Instructions for installing nvme-cli tool using Red Hat Enterprise Linux
+
+ 
+
+To list the currently enabled repositories, enter:
+
+# yum repolist enabled
+
+ 
+
+Install the nvme-cli package, enter:
+
+# yum install nvme-cli
+
+ 
+
+After nvme-cli is installed on the system, to check the current microcode 
+level for the adapter enter the following command:
+
+# nvme list
+
+ 
+
+Note: "nvme list" command uses libudev-devel, if it doesn't work, may need to 
+install ?libudev-devel"
+
+ 
+
+1) Type "nvme list"
+ 2) The column ?FW Rev? will list the firmware version.  For example:
+
+ # nvme list
+
+Node                               SN                                 Model
+                            Namespace         Usage                       Format
+             FW Rev
+
+----------------     ------------------------      
+-----------------------------------    ---------------   
+-------------------------  ------------------   -------------
+
+/dev/nvme0n1    S6HHNE0R200107     800GB NVMe Gen4 U.2 SSD             1
+           800 GB /   800 GB      4 KiB +  0 B   REV.SN56
+
+ 
+
+If the Firmware Version is below than SN56 then you should update the 
+microcode.
+
+3.2 Downloading and Unpacking the Firmware Update Package
+
+1. Download feature code ES1E/ES1G/ES5V package from FixCentral, and transfer 
+the file, to a temporary directory on the target server such as /tmp.
+
+2. Unpack the package
+
+     rpm -ivh --ignoreos PM9A5-SN56-LINUX.rpm
+
+3. The microcode package extracts the firmware file to 
+the /lib/firmware/ directory
+
+ 
+
+3.3 Verifying microcode before download and notes
+
+NOTE: Microcode download must be performed separately for each nvme under 
+distinct Logical Partitions (LPAR's).
+               Please save current and older versions of the microcode update 
+files in case you need to restore your system.
+
+ Please verify the file size and checksum of the raw microcode files matches 
+the below.
+Filesize:  3145728
+ Checksum:  46127
+ For Linux:  "ls -l /lib/firmware/A1800110.534e3536" to verify Filesize.
+                     "sum /lib/firmware/A1800110.534e3536" to verify Checksum.
+
+For systems that have LPAR installed, the microcode file must be placed on 
+all partitions that have(owns) an NVMe device in order to update the code.  
+ Follow this procedure for each partition:
+     
+
+1.       Log into the target partition.
+
+2.       Type: "cd /lib/firmware"
+
+3.       SFTP to the partition that has the media bay assigned. (ie.  
+"sftp partition1.ibm.com")
+
+4.       Type: "cd /lib/firmware"
+
+5.       Type: "get A1800110.534e3536"
+
+6.       Type: "quit"
+
+3.4 Microcode Download Procedure-NVMe Adapters for Linux
+
+ 1) Type "nvme list" and press "Enter".  This will list all of the NVMe
+ adapters in your partition.  In the Node column, the NVMe adapters will be 
+listed as /dev/nvme#n1 where # is the number of the device.
+ 2) For each NVMe adapter to be update, issue the following commands:
+
+a)     Type ?nvme fw-log /dev/nvme<#>? and press ?Enter?, where <#> is the 
+number of the device. 
+
+                For example, for device /dev/nvme0n1, type 
+
+                ?nvme fw-log /dev/nvme0? and press ?Enter?.  This will list 
+the firmware level currently loaded on the adapter as well as the number of 
+slots in the adapter.  
+               These 3 slots are listed as frs1, frs3.
+
+       b)     Download and activate firmware to the adapter by typing:
+
+               Note that there are 4 FW ?slots? in this nvme, each slot must 
+be updated AND activated, example below is for nvme0
+
+ 
+
+nvme fw-download /dev/nvme0 --fw=/lib/firmware/A1800110.534e3536
+
+nvme fw-activate /dev/nvme0 -a 0 ?s 1
+
+                                
+
+Repeat for all slots (-s 2; -s 3)
+
+ 
+
+nvme fw-activate /dev/nvme0 -a 3 ?s 3   ß this step may be omitted if the nvme
+ device does not support the function
+
+nvme reset /dev/nvme0 
+
+ 
+

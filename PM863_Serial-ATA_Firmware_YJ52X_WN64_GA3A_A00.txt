@@ -1,0 +1,27 @@
+Samsung GA3A for model number(s) MZ7LM120HCFD00D3, MZ7LM480HCHP00D3, MZ7LM960HCHP00D3, MZ7LM1T9HCJM00D3, MZ7LM3T8HCJM00D3, MZ8LM120HCFD00D3, MZ8LM480HCHP00D3 and MZ8LM960HCJH00D3.
+
+Fixes & Enhancements
+
+Fixes:
+-Alters Randomizer Seed for PLP metadata block writes, to prevent repeated power cycles from over-stressing the PLP metadata NAND by repeatedly writing the same patterns.
+
+Enhancements:
+-N/A
+
+Version
+GA3A, A00
+
+Release date
+01 Jul 2019
+
+Download Type
+Firmware
+
+Category
+Storage
+
+
+Notes: 
+
+- DELL OEM
+- FW can be easily extracted from the executable file by opening the *.exe file in WinRAR, etc.

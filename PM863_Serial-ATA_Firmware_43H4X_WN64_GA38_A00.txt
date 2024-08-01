@@ -1,0 +1,31 @@
+Samsung GA38 for model number(s) MZ7LM120HCFD00D3, MZ7LM480HCHP00D3, MZ7LM960HCHP00D3, MZ7LM1T9HCJM00D3, MZ7LM3T8HCJM00D3, MZ8LM120HCFD00D3, MZ8LM480HCHP00D3 and MZ8LM960HCJH00D3
+
+
+Fixes & Enhancements
+
+Fixes:
+-Fixed incorrect reporting of drive life remaining when percentage was equal to 100%
+-Fixed log page information to correctly identify drive behavior when requested
+
+Improvements:
+-Improved the time to ready after an unplanned power loss
+-Improved background media scanning
+
+
+Version
+GA38, A00
+
+Release date
+15 Jul 2016
+
+Download Type
+Firmware
+
+Category
+Storage
+
+
+Notes: 
+
+- DELL OEM
+- FW can be easily extracted from the executable file by opening the *.exe file in WinRAR, etc.

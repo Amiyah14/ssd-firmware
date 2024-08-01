@@ -1,0 +1,22 @@
+Fixes & Enhancements
+
+Fixes:-
+Firmware fix to remove Endurance Management feature, in order to maintain drive performance through life of drive.
+
+Version
+GA3B, A00
+
+Release date
+16 Aug 2022
+
+Download Type
+Firmware
+
+Category
+Storage
+
+
+Notes: 
+
+- DELL OEM
+- FW can be easily extracted from the executable file by opening the *.exe file in WinRAR, etc.

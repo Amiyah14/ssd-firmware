@@ -1,0 +1,12 @@
+Update utility specifically supports these models:
+KCM61VUL1T60
+KCM61VUL3T20
+
+I suspect the binaries will work on a few more CM6 models with 010* firmware naming. (base model, NOT SED OR FIPS models)
+(I don't have any CM6 drives on hand but I think this firmware will be useful for a few members on this forum.)
+Binaries were extracted from a Lenovo update utility for China-only servers.
+Original file name: "lnvgy_fw_drives_all-3.06.11-cfc_linux_x86-64.bin"
+
+0105.ftd & 0106.ftd are the actual firmware binaries.
+
+mjshark

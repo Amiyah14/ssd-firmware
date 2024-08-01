@@ -1,0 +1,32 @@
+﻿Share Link: https://c.gmx.net/@324567863383819227/MoiYbWYCQS68d3fhV0qk1w
+PW: ssdfw
+
+You can add SSD Firmwares which are hard to get. Help to reduce e-waste and set a sign against the business practices of the enterprise market.
+Please make it more or less self explaining (directory structure, filename and/or txt file)
+
+
+still looking for original FW's:
+sm863 GXM1103Q or/and GXM1203Q
+pm863 GXT3003Q
+sm883 HXM7A04Q
+pm883 HXT7B04Q
+pm983 u.2 EDA5702Q
+pm983 m.2 EDB7602Q
+
+
+and for all others...
+
+sm825                   -- AXM1***Q
+sm843t(n)               -- DXM8***Q / DXM9***Q
+sv843 (and 845DC Pro)   -- DXV8***Q
+pm853t (and 845DC Evo)  -- EXT0***Q (EXT1***Q?)
+pm/sm953 u.2 & m.2      -- BXV5***Q & BXV7***Q / BXU8***Q
+pm/sm963 u.2 & m.2      -- CXV8***Q / CXU8***Q
+pm1725a/b               -- KPYA***Q / GPNA***Q / GPJA***Q
+pm1735                    (they seem to use the same f/w as pm1733 evt0)
+pm1633(a)               -- VET2***Q / VET4***Q
+pm1643(a)               -- VFT5***Q / VFT6***Q
+pm1653                  -- VGT7***Q
+sz1735
+
+SK-Hynix eSSD Firmwares are too not really obtainable, but not seen as much on the OEM to consumer market like the Samsung ones

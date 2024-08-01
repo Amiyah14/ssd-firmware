@@ -1,0 +1,5 @@
+﻿ GXA5 firmware is for samsung PM1643a, is it compatible with samsung PM1643 ?e
+
+probably not, the „a“ means a new hardware revision with changes in NAND and/or controller, eg. The pm983a uses 96-layer tlc v-nand instead of 64-layer
+
+and please use a forum, like servethehome or others to ask questions

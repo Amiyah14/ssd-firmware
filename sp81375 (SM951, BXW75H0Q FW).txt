@@ -1,0 +1,5 @@
+
+Notes: 
+
+- HP OEM
+- FW can be easily extracted from the executable file by opening the *.exe file in WinRAR, etc.

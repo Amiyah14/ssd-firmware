@@ -1,0 +1,26 @@
+Fixes & Enhancements
+
+Fixes:
+-Fixes case where drive will enter error mode after power loss
+-Numerous other bug fixes
+
+Enhancements:
+-N/A
+
+Version
+GA39, A00
+
+Release date
+26 Jan 2018
+
+Download Type
+Firmware
+
+Category
+Storage
+
+
+Notes: 
+
+- DELL OEM
+- FW can be easily extracted from the executable file by opening the *.exe file in WinRAR, etc.

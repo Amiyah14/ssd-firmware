@@ -1,0 +1,22 @@
+Fixes & Enhancements
+
+Fixes :
+- Reset Handling fix to ensure COMRESET completes in less than 1 second.
+
+Version
+HJ56, A00
+
+Release date
+21 Apr 2023
+
+Download Type
+Firmware
+
+Category
+Storage
+
+
+Notes: 
+
+- DELL OEM
+- FW can be easily extracted from the executable file by opening the *.exe file in WinRAR, etc.

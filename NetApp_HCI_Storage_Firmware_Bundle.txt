@@ -1,0 +1,2 @@
+Whats in this bundle? See https://github.com/NetAppDocs/hci/blob/main/_include/fw_versions_storage_nodes.adoc
+

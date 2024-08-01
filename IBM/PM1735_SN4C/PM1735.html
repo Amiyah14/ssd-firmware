@@ -1,0 +1,2799 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:st1="urn:schemas-microsoft-com:office:smarttags"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="PM1735_files/filelist.xml">
+<title>IBM pSeries Servers - Microcode Update for Ultrastar 146LZX
+9/18/36/73/146 GB</title>
+<o:SmartTagType namespaceuri="urn:schemas-microsoft-com:office:smarttags"
+ name="stockticker"/>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>IBM_User</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Asghar Tavasoli</o:LastAuthor>
+  <o:Revision>9</o:Revision>
+  <o:TotalTime>13793</o:TotalTime>
+  <o:LastPrinted>2005-02-22T17:03:00Z</o:LastPrinted>
+  <o:Created>2023-02-10T14:17:00Z</o:Created>
+  <o:LastSaved>2023-02-10T14:52:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>2284</o:Words>
+  <o:Characters>13021</o:Characters>
+  <o:Company>IBM</o:Company>
+  <o:Lines>108</o:Lines>
+  <o:Paragraphs>30</o:Paragraphs>
+  <o:CharactersWithSpaces>15275</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="PM1735_files/themedata.thmx">
+<link rel=colorSchemeMapping href="PM1735_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>110</w:Zoom>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" LatentStyleCount="376">
+  <w:LsdException Locked="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Hashtag"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" Priority="99" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]--><!--[if !mso]><object
+ classid="clsid:38481807-CA0E-42D2-BF39-B33AF135CC4D" id=ieooui></object>
+<style>
+st1\:*{behavior:url(#ieooui) }
+</style>
+<![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Helvetica;
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536858881 -1073711013 9 0 511 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1040178053 9 0 511 0;}
+@font-face
+	{font-family:Times;
+	panose-1:2 2 6 3 5 4 5 2 3 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536858881 -1073711013 9 0 511 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-520081665 -1073717157 41 0 66047 0;}
+@font-face
+	{font-family:Consolas;
+	panose-1:2 11 6 9 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:modern;
+	mso-font-pitch:fixed;
+	mso-font-signature:-536869121 64767 1 0 415 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:blue;
+	mso-font-kerning:16.0pt;
+	font-weight:bold;}
+h2
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:blue;
+	font-weight:bold;
+	mso-bidi-font-style:italic;}
+h3
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	color:blue;
+	font-weight:bold;}
+p.MsoToc1, li.MsoToc1, div.MsoToc1
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-priority:39;
+	mso-style-next:Normal;
+	margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	tab-stops:right 431.5pt;
+	font-size:12.0pt;
+	font-family:"Times",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;
+	mso-no-proof:yes;}
+p.MsoToc2, li.MsoToc2, div.MsoToc2
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-priority:39;
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoToc3, li.MsoToc3, div.MsoToc3
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-priority:39;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:12.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc4, li.MsoToc4, div.MsoToc4
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:24.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc5, li.MsoToc5, div.MsoToc5
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc6, li.MsoToc6, div.MsoToc6
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:48.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc7, li.MsoToc7, div.MsoToc7
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:60.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc8, li.MsoToc8, div.MsoToc8
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:1.0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoToc9, li.MsoToc9, div.MsoToc9
+	{mso-style-update:auto;
+	mso-style-noshow:yes;
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:84.0pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoCommentText, li.MsoCommentText, div.MsoCommentText
+	{mso-style-noshow:yes;
+	mso-style-link:"Comment Text Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+span.MsoCommentReference
+	{mso-style-noshow:yes;
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoDocumentMap, li.MsoDocumentMap, div.MsoDocumentMap
+	{mso-style-noshow:yes;
+	mso-style-link:"Document Map Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	background:navy;
+	font-size:12.0pt;
+	font-family:"Tahoma",sans-serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoPlainText, li.MsoPlainText, div.MsoPlainText
+	{mso-style-noshow:yes;
+	mso-style-link:"Plain Text Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-style-noshow:yes;
+	mso-style-link:"Normal \(Web\) Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+tt
+	{mso-style-noshow:yes;
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+p.MsoCommentSubject, li.MsoCommentSubject, div.MsoCommentSubject
+	{mso-style-noshow:yes;
+	mso-style-parent:"Comment Text";
+	mso-style-link:"Comment Subject Char";
+	mso-style-next:"Comment Text";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	font-weight:bold;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-link:"Balloon Text Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-noshow:yes;
+	mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-noshow:yes;
+	mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-noshow:yes;
+	mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-noshow:yes;
+	mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:blue;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	color:blue;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+span.NormalWebChar
+	{mso-style-name:"Normal \(Web\) Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Normal \(Web\)";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times",serif;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:Times;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-no-proof:yes;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+span.CommentTextChar
+	{mso-style-name:"Comment Text Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Comment Text";}
+span.DocumentMapChar
+	{mso-style-name:"Document Map Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Document Map";
+	mso-ansi-font-size:8.0pt;
+	mso-bidi-font-size:8.0pt;
+	font-family:"Tahoma",sans-serif;
+	mso-ascii-font-family:Tahoma;
+	mso-hansi-font-family:Tahoma;
+	mso-bidi-font-family:Tahoma;}
+span.PlainTextChar
+	{mso-style-name:"Plain Text Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Plain Text";
+	mso-ansi-font-size:10.5pt;
+	mso-bidi-font-size:10.5pt;
+	font-family:Consolas;
+	mso-ascii-font-family:Consolas;
+	mso-hansi-font-family:Consolas;
+	mso-bidi-font-family:Consolas;}
+span.CommentSubjectChar
+	{mso-style-name:"Comment Subject Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"Comment Text Char";
+	mso-style-link:"Comment Subject";
+	font-weight:bold;}
+span.BalloonTextChar
+	{mso-style-name:"Balloon Text Char";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Balloon Text";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-ascii-font-family:"Segoe UI";
+	mso-hansi-font-family:"Segoe UI";
+	mso-bidi-font-family:"Segoe UI";}
+span.heading4Char
+	{mso-style-name:"heading 4 Char";
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-parent:"Normal \(Web\) Char";
+	mso-style-link:"heading 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Times",serif;
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:Times;
+	color:blue;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	mso-bidi-font-style:italic;
+	mso-no-proof:yes;}
+p.heading4, li.heading4, div.heading4
+	{mso-style-name:"heading 4";
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"Normal \(Web\)";
+	mso-style-link:"heading 4 Char";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	color:blue;
+	font-weight:bold;
+	mso-bidi-font-style:italic;}
+p.Heading-5, li.Heading-5, div.Heading-5
+	{mso-style-name:Heading-5;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"Normal \(Web\)";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	color:blue;
+	mso-bidi-font-weight:bold;
+	mso-bidi-font-style:italic;}
+p.Default, li.Default, div.Default
+	{mso-style-name:Default;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	margin:0in;
+	mso-pagination:widow-orphan;
+	mso-layout-grid-align:none;
+	text-autospace:none;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	color:black;}
+span.subtitle1
+	{mso-style-name:subtitle1;
+	mso-style-unhide:no;
+	mso-ansi-font-size:11.5pt;
+	mso-bidi-font-size:11.5pt;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	font-weight:normal;}
+span.left
+	{mso-style-name:left;
+	mso-style-unhide:no;}
+span.style19
+	{mso-style-name:style19;
+	mso-style-unhide:no;}
+span.auto-style8
+	{mso-style-name:auto-style8;
+	mso-style-unhide:no;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:834955838;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1301727372 67698703 67698713 67698715 67698703 67698713 67698715 67698703 67698713 67698715;}
+@list l0:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:43.8pt;
+	text-indent:-.25in;}
+@list l0:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:79.8pt;
+	text-indent:-.25in;}
+@list l0:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:115.8pt;
+	text-indent:-9.0pt;}
+@list l0:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:151.8pt;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:187.8pt;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:223.8pt;
+	text-indent:-9.0pt;}
+@list l0:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:259.8pt;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:295.8pt;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	margin-left:331.8pt;
+	text-indent:-9.0pt;}
+@list l1
+	{mso-list-id:2107532252;
+	mso-list-template-ids:-1764205730;}
+@list l1:level1
+	{mso-level-text:%1;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l1:level2
+	{mso-level-text:"%1\.%2";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-text:"%1\.%2\.%3";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l1:level4
+	{mso-level-text:"%1\.%2\.%3\.%4";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l1:level5
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.5in;
+	text-indent:-.5in;}
+@list l1:level6
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.75in;}
+@list l1:level7
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.75in;}
+@list l1:level8
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+@list l1:level9
+	{mso-level-text:"%1\.%2\.%3\.%4\.%5\.%6\.%7\.%8\.%9";
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.0in;
+	text-indent:-1.0in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=EN-US link=blue vlink=blue style='tab-interval:.5in;
+word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal>-&nbsp; </p>
+
+<p align=center style='margin:0in;text-align:center'><st1:stockticker w:st="on"><b><span
+ style='font-size:13.5pt'>IBM</span></b></st1:stockticker><b><span
+style='font-size:13.5pt'> Power Systems AIX/Linux</span></b> <br>
+<b><span style='font-size:13.5pt'>Microcode Update for PM1735 <o:p></o:p></span></b></p>
+
+<p align=center style='margin:0in;text-align:center'><b><span style='font-size:
+13.5pt'>U.2 <span class=SpellE>NVMe</span> SSD<o:p></o:p></span></b></p>
+
+<p align=center style='margin:0in;text-align:center'><b><span style='font-size:
+13.5pt'>1600/3200/6400 GB</span></b> <br>
+<b><span style='font-size:13.5pt'>Microcode Level SN4C</span></b></p>
+
+<p align=center style='margin:0in;text-align:center'>DATE: February <span
+class=GramE>10,<span style='mso-spacerun:yes'>  </span>2023</span></p>
+
+<p style='margin:0in'><span style='font-size:9.0pt'><br>
+</span><b><span style='font-size:14.0pt;color:blue'>Table of Contents</span></b><span
+style='font-size:14.0pt'><o:p></o:p></span></p>
+
+<p class=MsoToc1><!--[if supportFields]><span style='font-family:"Times New Roman",serif'><span
+style='mso-element:field-begin'></span><span
+style='mso-spacerun:yes'> </span>TOC \o &quot;1-5&quot; \n \h \z \u <span
+style='mso-element:field-separator'></span></span><![endif]--><span
+class=MsoHyperlink><a href="#_Toc46224669"><span style='font-family:"Times New Roman",serif'>1.
+General Information</span></a></span><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+font-weight:normal'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:24.0pt right 431.5pt'><span
+class=MsoHyperlink><span style='mso-no-proof:yes'><a href="#_Toc46224670">1.1<span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;color:windowtext;font-weight:normal;text-decoration:
+none;text-underline:none'><span style='mso-tab-count:1'>     </span></span>Disk
+Drives Affected</a></span></span><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+font-weight:normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right 431.5pt'><span class=MsoHyperlink><span
+style='mso-no-proof:yes'><a href="#_Toc46224671">1.2 Microcode Change History</a></span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;font-weight:normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc46224672"><span
+style='font-family:"Times New Roman",serif'>2.<span style='mso-spacerun:yes'> 
+</span>AIX and VIOS(PowerVM Virtual I/O Server) Operating System</span></a></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;font-weight:normal'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right 431.5pt'><span class=MsoHyperlink><span
+style='mso-no-proof:yes'><a href="#_Toc46224673">2.1 Installation Time</a></span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;font-weight:normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right 431.5pt'><span class=MsoHyperlink><span
+style='mso-no-proof:yes'><a href="#_Toc46224674">2.2 Determine Drive Model,
+FRU&amp;PN and Current Microcode Level</a></span></span><span style='font-size:
+11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;
+mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:minor-fareast;
+mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;font-weight:normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right 431.5pt'><span class=MsoHyperlink><span
+style='mso-no-proof:yes'><a href="#_Toc46224675">2.3.1 Internet AIX self
+extracting file (.bin)</a></span></span><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc3 style='tab-stops:right 431.5pt'><span class=MsoHyperlink><span
+style='mso-no-proof:yes'><a href="#_Toc46224676">2.3.2 Internet RPM package</a></span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right 431.5pt'><span class=MsoHyperlink><span
+style='mso-no-proof:yes'><a href="#_Toc46224677">2.4 Microcode Download
+Procedure</a></span></span><span style='font-size:11.0pt;font-family:"Calibri",sans-serif;
+mso-ascii-theme-font:minor-latin;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:minor-latin;
+mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+font-weight:normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc1><span class=MsoHyperlink><a href="#_Toc46224678"><span
+lang=DA style='mso-ansi-language:DA'>3.<span style='mso-spacerun:yes'>  
+</span>Linux Operating System</span></a></span><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+font-weight:normal'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right 431.5pt'><span class=MsoHyperlink><span
+style='mso-no-proof:yes'><a href="#_Toc46224679">3.1 Determine the Current Microcode
+Level for Linux:</a></span></span><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+font-weight:normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right 431.5pt'><span class=MsoHyperlink><span
+style='mso-no-proof:yes'><a href="#_Toc46224680">3.2 Downloading and Unpacking
+the Firmware Update Package</a></span></span><span style='font-size:11.0pt;
+font-family:"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+font-weight:normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right 431.5pt'><span class=MsoHyperlink><span
+style='mso-no-proof:yes'><a href="#_Toc46224681">3.3 Verifying microcode before
+download and notes</a></span></span><span style='font-size:11.0pt;font-family:
+"Calibri",sans-serif;mso-ascii-theme-font:minor-latin;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-hansi-theme-font:
+minor-latin;mso-bidi-font-family:"Times New Roman";mso-bidi-theme-font:minor-bidi;
+font-weight:normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p class=MsoToc2 style='tab-stops:right 431.5pt'><span class=MsoHyperlink><span
+style='mso-no-proof:yes'><a href="#_Toc46224682">3.4 Microcode Download
+Procedure-<span style='mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:
+major-fareast'>NVMe</span>&nbsp;Adapters for Linux</a></span></span><span
+style='font-size:11.0pt;font-family:"Calibri",sans-serif;mso-ascii-theme-font:
+minor-latin;mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:
+minor-fareast;mso-hansi-theme-font:minor-latin;mso-bidi-font-family:"Times New Roman";
+mso-bidi-theme-font:minor-bidi;font-weight:normal;mso-no-proof:yes'><o:p></o:p></span></p>
+
+<p style='margin-bottom:12.0pt'><!--[if supportFields]><b><span
+style='color:blue'><span style='mso-element:field-end'></span></span></b><![endif]--><b>===============================================================</b>
+</p>
+
+<h1><a name="_Toc46224669"></a><a name="_Toc96833246"></a><a name="_Toc96833176"></a><a
+name="_Toc96832388"><span style='mso-bookmark:_Toc96833176'><span
+style='mso-bookmark:_Toc96833246'><span style='mso-bookmark:_Toc46224669'><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'>1. General Information</span></span></span></span></a><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'> <o:p></o:p></span></h1>
+
+<p style='margin:0in'><span style='font-size:9.0pt;color:black'>The Microcode files
+provided in this package are for SAS disk drives used in <st1:stockticker
+w:st="on">IBM</st1:stockticker> system P Servers<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:9.0pt;color:black'>with AIX or
+Linux operating systems<o:p></o:p></span></p>
+
+<h2 style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level2 lfo2'><a
+name="_Toc46224670"></a><a name="_Toc96833247"></a><a name="_Toc96833177"></a><a
+name="_Toc96832389"><span style='mso-bookmark:_Toc96833177'><span
+style='mso-bookmark:_Toc96833247'><span style='mso-bookmark:_Toc46224670'><![if !supportLists]><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><span style='mso-list:Ignore'>1.1<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>Disk Drives Affected</span></span></span></span></a><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><span style='mso-spacerun:yes'>  </span><o:p></o:p></span></h2>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>Below is the list of
+microcode files in this package:<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>NOTE:
+To insure the integrity of microcode files, please make sure the checksum value
+is correct after extraction</span><span style='font-size:10.0pt'> <o:p></o:p></span></p>
+
+<p style='margin:0in'><a name=2.0></a><b><span style='font-size:10.0pt;
+color:#3333FF'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0 width=582
+ style='margin-left:-.4pt;border-collapse:collapse;mso-table-layout-alt:fixed;
+ border:none;mso-border-alt:solid windowtext .5pt;mso-yfti-tbllook:480;
+ mso-padding-alt:0in 5.4pt 0in 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width=66 style='width:49.65pt;border:solid windowtext 1.0pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><tt><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+  "Times New Roman",serif'>Size</span></b></tt><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:10.0pt'><o:p></o:p></span></b></p>
+  </td>
+  <td width=162 style='width:121.35pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><tt><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+  "Times New Roman",serif'>Disk Drive Model</span></b></tt><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:10.0pt'><o:p></o:p></span></b></p>
+  </td>
+  <td width=27 style='width:20.25pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><tt><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+  "Times New Roman",serif'>FRU#</span></b></tt><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:10.0pt'><o:p></o:p></span></b></p>
+  </td>
+  <td width=69 style='width:51.6pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><tt><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+  "Times New Roman",serif'>P/N (VPD)</span></b></tt><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:10.0pt'><o:p></o:p></span></b></p>
+  </td>
+  <td width=168 style='width:126.3pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><tt><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+  "Times New Roman",serif'>Microcode File Name</span></b></tt><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt'><o:p></o:p></span></b></p>
+  </td>
+  <td width=90 style='width:67.35pt;border:solid windowtext 1.0pt;border-left:
+  none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><tt><b
+  style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt;font-family:
+  "Times New Roman",serif'>Check Sum</span></b></tt><b style='mso-bidi-font-weight:
+  normal'><span style='font-size:10.0pt'><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=66 style='width:49.65pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><tt><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>1600 GB<o:p></o:p></span></tt></p>
+  </td>
+  <td width=162 style='width:121.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='font-size:10.0pt;color:black;background:white'>MZWLJ1T6HBJR-000M3</span></p>
+  </td>
+  <td width=27 style='width:20.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='font-size:10.0pt;color:black;background:white'>01LU967</span><span
+  style='font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=69 style='width:51.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='font-size:10.0pt;color:black;background:white'>01LU944</span><span
+  style='font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=168 rowspan=3 style='width:126.3pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='font-size:10.0pt;color:black;mso-color-alt:windowtext;background:white'>A180010C.534e3443</span><span
+  style='font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=90 rowspan=3 style='width:67.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt'>32368<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=66 style='width:49.65pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><tt><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>3200 GB<o:p></o:p></span></tt></p>
+  </td>
+  <td width=162 style='width:121.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='font-size:10.0pt;color:black;background:white'>MZWLJ3T2HBLS-000M3</span></p>
+  </td>
+  <td width=27 style='width:20.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='font-size:10.0pt;color:black;background:white'>01LU968</span><span
+  style='font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width=69 style='width:51.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='font-size:10.0pt;color:black;background:white'>01LU965</span><span
+  style='font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes'>
+  <td width=66 style='width:49.65pt;border:solid windowtext 1.0pt;border-top:
+  none;mso-border-top-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;
+  padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><tt><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'>6400 GB<o:p></o:p></span></tt></p>
+  </td>
+  <td width=162 style='width:121.35pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='font-size:10.0pt;color:black;background:white'>MZWLJ6T4HALA-</span><span
+  style='font-size:10.0pt;color:black'><br style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+  text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+  0px'>
+  <span style='background:white'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+  text-decoration-style: initial;text-decoration-color: initial;float:none;
+  word-spacing:0px'>000M3</span></span></span><tt><span style='font-size:10.0pt;
+  font-family:"Times New Roman",serif'><o:p></o:p></span></tt></p>
+  </td>
+  <td width=27 style='width:20.25pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='font-size:10.0pt;color:black;background:white'>01LU969</span><tt><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></tt></p>
+  </td>
+  <td width=69 style='width:51.6pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal style='mso-layout-grid-align:none;text-autospace:none'><span
+  style='font-size:10.0pt;color:black;background:white'>01LU966</span><tt><span
+  style='font-size:10.0pt;font-family:"Times New Roman",serif'><o:p></o:p></span></tt></p>
+  </td>
+ </tr>
+</table>
+
+<h2><a name="_Toc46224671"></a><a name="_Toc96833248"></a><a name="_Toc96833178"></a><a
+name="_Toc96832390"><span style='mso-bookmark:_Toc96833178'><span
+style='mso-bookmark:_Toc96833248'><span style='mso-bookmark:_Toc46224671'><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'>1.2 Microcode Change History</span></span></span></span></a><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'> </span><span style='font-size:10.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman";color:windowtext'><o:p></o:p></span></h2>
+
+<table class=MsoNormalTable border=1 cellpadding=0 width="50%"
+ style='width:50.56%;mso-cellspacing:1.5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0in 0in 0in 0in'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes;height:23.7pt'>
+  <td width="13%" style='width:13.82%;padding:.75pt .75pt .75pt .75pt;
+  height:23.7pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Release date</span></b><span
+  style='font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width="9%" style='width:9.52%;padding:.75pt .75pt .75pt .75pt;height:
+  23.7pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Code level</span></b><span
+  style='font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+  <td width="9%" valign=top style='width:9.52%;padding:0in 0in 0in 0in;
+  height:23.7pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Severity/<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Impact<o:p></o:p></span></b></p>
+  </td>
+  <td width="65%" style='width:65.52%;padding:.75pt .75pt .75pt .75pt;
+  height:23.7pt'>
+  <p class=MsoNormal><b><span style='font-size:10.0pt'>Change Description</span></b><span
+  style='font-size:10.0pt'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width="13%" style='width:13.82%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>Feb
+  2023<o:p></o:p></span></p>
+  </td>
+  <td width="9%" style='width:9.52%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>SN4C<o:p></o:p></span></p>
+  </td>
+  <td width="9%" valign=top style='width:9.52%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>ATT/<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>Function<o:p></o:p></span></p>
+  </td>
+  <td width="65%" style='width:65.52%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.5pt;font-family:"Arial",sans-serif;
+  color:black;background:white'>- SED Boot Support</span></span><span
+  style='font-size:9.5pt;font-family:"Arial",sans-serif;color:black'><br
+  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+  widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+  text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+  0px'>
+  <span style='background:white'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+  text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+  float:none;word-spacing:0px'>- Other fixes and <span class=SpellE>anhancements</span></span><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width="13%" style='width:13.82%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>May
+  2022<o:p></o:p></span></p>
+  </td>
+  <td width="9%" style='width:9.52%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>SN4B<o:p></o:p></span></p>
+  </td>
+  <td width="9%" valign=top style='width:9.52%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>ATT/<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>Function<o:p></o:p></span></p>
+  </td>
+  <td width="65%" style='width:65.52%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:9.5pt;font-family:"Arial",sans-serif;
+  color:black;background:white'>-Fixed incorrect &quot;read temperature&quot;
+  before drive is ready (at power up)</span><span style='font-size:9.5pt;
+  font-family:"Arial",sans-serif;color:black'><br style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+  text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+  word-spacing:0px'>
+  <span style='background:white'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+  text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+  float:none;word-spacing:0px'>-False Temperature Reading after microcode
+  download and drive <span class=SpellE>bringup</span></span></span><br
+  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+  widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+  text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+  0px'>
+  <span style='background:white'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+  text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+  float:none;word-spacing:0px'>-More precise life used reporting in IBM <span
+  class=SpellE>LogPage</span></span></span></span><span style='font-size:10.0pt;
+  color:black;background:white'><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width="13%" style='width:13.82%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>Feb
+  2022<o:p></o:p></span></p>
+  </td>
+  <td width="9%" style='width:9.52%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>SN4A<o:p></o:p></span></p>
+  </td>
+  <td width="9%" valign=top style='width:9.52%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>ATT/<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>Function<o:p></o:p></span></p>
+  </td>
+  <td width="65%" style='width:65.52%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:black;background:white'>-Fixed
+  a bug that cause incorrect temperature reading during <span class=SpellE>NVMe</span>
+  power up.<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:black;background:white'>-</span>
+  <span class=SpellE><span style='font-size:10.0pt;color:black;background:white'>Trylimit</span></span><span
+  style='font-size:10.0pt;color:black;background:white'> value is changed from
+  zero to 10<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:black;background:white'>-Other
+  fixes and enhancements<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width="13%" style='width:13.82%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>May
+  2021<o:p></o:p></span></p>
+  </td>
+  <td width="9%" style='width:9.52%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>SN49<o:p></o:p></span></p>
+  </td>
+  <td width="9%" valign=top style='width:9.52%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>ATT/<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>Function<o:p></o:p></span></p>
+  </td>
+  <td width="65%" style='width:65.52%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;color:black;background:white'>-
+  Write Performance Enhancement</span><span style='font-size:10.0pt;color:black'><br
+  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+  widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+  text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+  0px'>
+  <span style='background:white'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+  text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+  float:none;word-spacing:0px'>- In dual port mode, the port1 can be linkup
+  failed.</span></span><br style='font-variant-ligatures: normal;font-variant-caps: normal;
+  orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+  text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+  0px'>
+  <span style='background:white'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+  text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+  float:none;word-spacing:0px'>- Abort failed due to inconsistent status or
+  completion of the Abort command prior to the aborted command</span></span><br
+  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+  widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+  text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+  0px'>
+  <span style='background:white'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+  text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+  float:none;word-spacing:0px'>- DRAM Training Fail</span></span><br
+  style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+  widows: 2;-webkit-text-stroke-width: 0px;text-decoration-thickness: initial;
+  text-decoration-style: initial;text-decoration-color: initial;word-spacing:
+  0px'>
+  <span style='background:white'><span style='font-variant-ligatures: normal;
+  font-variant-caps: normal;orphans: 2;widows: 2;-webkit-text-stroke-width: 0px;
+  text-decoration-thickness: initial;text-decoration-style: initial;text-decoration-color: initial;
+  float:none;word-spacing:0px'>- Other bug fixes and enhancements</span></span><span
+  style='mso-bidi-font-weight:bold'><o:p></o:p></span></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5;mso-yfti-lastrow:yes'>
+  <td width="13%" style='width:13.82%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>July
+  2020<o:p></o:p></span></p>
+  </td>
+  <td width="9%" style='width:9.52%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>SN45<o:p></o:p></span></p>
+  </td>
+  <td width="9%" valign=top style='width:9.52%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>New/<o:p></o:p></span></p>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>New<o:p></o:p></span></p>
+  </td>
+  <td width="65%" style='width:65.52%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>Initial
+  Release<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0in'><a name=3.0.0></a><tt><span style='mso-ansi-font-size:
+12.0pt;font-family:"Times New Roman",serif'><o:p>&nbsp;</o:p></span></tt></p>
+
+<p style='margin:0in'><tt><span style='mso-ansi-font-size:12.0pt;font-family:
+"Times New Roman",serif'><o:p>&nbsp;</o:p></span></tt></p>
+
+<p style='margin:0in'><tt><span style='mso-ansi-font-size:12.0pt;font-family:
+"Times New Roman",serif'>===============================================================</span></tt>
+</p>
+
+<h1><a name="_Toc96832391"></a><a name="_Toc96833179"></a><a name="_Toc96833249"></a><a
+name="_Toc46224672"></a><a name=3.0.1></a><span style='mso-bookmark:_Toc96832391'><span
+style='mso-bookmark:_Toc96833179'><span style='mso-bookmark:_Toc96833249'><span
+style='mso-bookmark:_Toc46224672'><span style='font-size:12.0pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>2.<span
+style='mso-spacerun:yes'>  </span>AIX and VIOS(<span class=SpellE>PowerVM</span>
+Virtual I/O Server) Operating System</span></span></span></span></span><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></h1>
+
+<p style='margin:0in'><span style='font-size:9.0pt'>Note: For VIOS systems,
+microcode of shared physical I/O resources can only be updated from VIOS
+partition.<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:9.0pt'>To update disk drive microcode,
+from VIOS partition, enter the following command:<span
+style='mso-spacerun:yes'>      </span><o:p></o:p></span></p>
+
+<p style='margin:0in'><span class=SpellE><span style='font-size:9.0pt'>oem_setup_env</span></span><span
+style='font-size:9.0pt'><span style='mso-spacerun:yes'>    </span><o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:9.0pt'>Then follow the instruction
+in section 2.3 to transfer/extract the microcode file, and section 2.4.1 to
+update the disk drive code</span>. </p>
+
+<h2><a name="_Toc46224673"></a><a name="_Toc96833250"></a><a name="_Toc96833180"></a><a
+name="_Toc96832392"><span style='mso-bookmark:_Toc96833180'><span
+style='mso-bookmark:_Toc96833250'><span style='mso-bookmark:_Toc46224673'><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'>2.1 Installation Time</span></span></span></span></a><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'> <o:p></o:p></span></h2>
+
+<p style='margin:0in'><i><span style='font-size:9.0pt'>Approximately 20 minutes
+if using Diagnostics CD; Approximately 5 minutes/drive using AIX concurrent
+diagnostics.</span></i><span style='font-size:9.0pt'> <br>
+&nbsp; <a name=4.0></a><o:p></o:p></span></p>
+
+<p style='margin:0in'><a name="_Toc46224674"></a><a name="_Toc96833251"></a><a
+name="_Toc96833181"></a><a name="_Toc96832393"><span style='mso-bookmark:_Toc96833181'><span
+style='mso-bookmark:_Toc96833251'><span style='mso-bookmark:_Toc46224674'><span
+class=Heading2Char><span style='font-size:14.0pt;font-family:"Times New Roman",serif'>2.2
+Determine Drive Model, FRU&amp;PN </span></span></span></span></span></a><span
+style='mso-bookmark:_Toc96832393'><span style='mso-bookmark:_Toc96833181'><span
+style='mso-bookmark:_Toc96833251'><span style='mso-bookmark:_Toc46224674'><span
+class=Heading2Char><span style='font-size:10.0pt;font-family:"Times New Roman",serif'>and
+Current Microcode Level</span></span></span></span></span></span><span
+style='mso-bookmark:_Toc46224674'></span><span style='mso-bookmark:_Toc96833251'></span><span
+style='mso-bookmark:_Toc96833181'></span><span style='mso-bookmark:_Toc96832393'></span><span
+style='font-size:10.0pt'><br>
+To see the drive type and current microcode level, Execute the following
+command: <br>
+<span class=SpellE>lscfg</span> –<span class=SpellE>vl</span> <span
+class=SpellE>nvme</span>*<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoPlainText><span style='font-family:"Times New Roman",serif'><span
+style='mso-spacerun:yes'> </span><b style='mso-bidi-font-weight:normal'>Vital
+Product Data (VPD)<o:p></o:p></b></span></p>
+
+<p style='margin:0in'><span class=SpellE><span style='font-size:10.0pt'>lscfg</span></span><span
+style='font-size:10.0pt'> -<span class=SpellE>vl</span> nvme7<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>  </span>nvme7<span
+style='mso-spacerun:yes'>            </span>U78D4.ND1.CSS10FA-P1-C<span
+class=GramE>2<span style='mso-spacerun:yes'>  </span>PCIe</span>4 x4 <span
+class=SpellE>NVMe</span> Flash Adapter<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>      </span>3.2TB <span class=SpellE>NVMe</span> Gen4
+U.2 SSD<span style='mso-spacerun:yes'>               </span><span class=GramE><span
+style='mso-spacerun:yes'>  </span>:</span><o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Part Number.................01CM529<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>EC Level....................P65459<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>FRU Number..................01LU968<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>AN).......01LU965<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Feature Code/Marketing ID...ES1G<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Customer Card ID Number<span
+class=GramE>.....</span>59B9<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Serial Number...............CEYD4016<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>Z0).......10140680<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>Z1).......3.0<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>Z2).......3200<span
+style='mso-spacerun:yes'>    </span><span style='color:red'>&lt;--- Capacity
+3200 GB</span><o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>Z3).......17.52<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>Z4).......0<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>Z5).......00<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>Z6).......A180010C<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>Z7).......0YA<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>Z8).......2902<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>Z9).......08<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>ZA).......0008<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>ZB).......0040<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>ZC).......00<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Manufacture
+ID..............S5H0NE0MC00039<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>ROM <span class=GramE>Level.(</span>alterable).......REV.SN4C<span
+style='mso-spacerun:yes'>   </span></span><span style='font-size:10.0pt;
+font-family:Wingdings;mso-ascii-font-family:"Times New Roman";mso-hansi-font-family:
+"Times New Roman";color:red;mso-char-type:symbol;mso-symbol-font-family:Wingdings'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>ß</span></span><span
+style='font-size:10.0pt;color:red'> FW level SN4C</span><span style='font-size:
+10.0pt'><o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Product <span class=GramE>Specific.(</span>RV).......S<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'>        </span>Hardware Location
+Code......U78D4.ND1.CSS10FA-P1-C2<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>You can also use <span
+class=SpellE>lsmcode</span> to find the microcode level:<o:p></o:p></span></p>
+
+<p style='margin:0in'><span class=SpellE><span style='font-size:10.0pt'>lsmcode</span></span><span
+style='font-size:10.0pt'> –<span class=SpellE>rd</span> nvme0<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt;color:black;mso-color-alt:
+windowtext;background:white'>A180010C.534e3443</span><span style='font-size:
+10.0pt;background:white'><o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>Note that <span
+class=SpellE>lsmcode</span> output FW level is displayed as ASCII/Hex<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>53 = S<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>4e = N<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>34 = 4<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>43 = C<o:p></o:p></span></p>
+
+<p class=MsoNormal>===============================================================<a
+name="_Toc96833253"></a><a name="_Toc96833183"></a><a name="_Toc96832395"><span
+style='mso-bookmark:_Toc96833183'><span style='mso-bookmark:_Toc96833253'></span></span></a></p>
+
+<p class=MsoNormal><span style='mso-bookmark:_Toc96832395'><span
+style='mso-bookmark:_Toc96833183'><span style='mso-bookmark:_Toc96833253'><b
+style='mso-bidi-font-weight:normal'><span style='color:blue'>2.3 Transferring
+and Unpacking the Microcode Update Package</span></b></span></span></span><b
+style='mso-bidi-font-weight:normal'><span style='color:blue'><o:p></o:p></span></b></p>
+
+<h3><a name="_Toc46224675"></a><a name="_Toc96833254"></a><a name="_Toc96833184"></a><a
+name="_Toc96832396"><span style='mso-bookmark:_Toc96833184'><span
+style='mso-bookmark:_Toc96833254'><span style='mso-bookmark:_Toc46224675'><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'>2.3.1 Internet AIX </span></span></span></span></a><span
+class=SpellE><span style='mso-bookmark:_Toc96832396'><span style='mso-bookmark:
+_Toc96833184'><span style='mso-bookmark:_Toc96833254'><span style='mso-bookmark:
+_Toc46224675'><span style='font-size:10.0pt;font-family:"Times New Roman",serif;
+mso-fareast-font-family:"Times New Roman"'>self extracting</span></span></span></span></span></span><span
+style='mso-bookmark:_Toc96832396'><span style='mso-bookmark:_Toc96833184'><span
+style='mso-bookmark:_Toc96833254'><span style='mso-bookmark:_Toc46224675'><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'> file (.bin)</span></span></span></span></span><span
+style='font-size:10.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'><o:p></o:p></span></h3>
+
+<p class=MsoNormal><span style='font-size:10.0pt'>a) Make a directory on an AIX
+system to receive the AIX format file. <br>
+&nbsp;&nbsp;&nbsp; Enter:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class=SpellE>mkdir</span>
+/<span class=SpellE>tmp</span>/<span class=SpellE>fwupdate</span> <br>
+b) Transfer the AIX format file to /<span class=SpellE>tmp</span>/<span
+class=SpellE>fwupdate</span> directory (using &quot;Save as ...&quot;). <br>
+&nbsp;&nbsp;&nbsp; You'll see the filename <span class=GramE>is<span
+style='mso-spacerun:yes'>  </span>PM1735.bin</span> <br>
+c) Unpack the file by executing the instructions below. <br>
+&nbsp; Enter the commands: <br>
+&nbsp; cd /<span class=SpellE>tmp</span>/<span class=SpellE>fwupdate</span> <br>
+&nbsp; <span class=SpellE>chmod</span> +x PM1735.bin<br>
+<span style='color:black'>&nbsp; ./</span>PM1735.bin<br>
+[Don't overlook the periods (.) in the above command.] <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>The directory PM1735 with microcode files
+listed in section 1.1 will be added to /<span class=SpellE>tmp</span>/<span
+class=SpellE>fwupdate</span>. <br>
+d-Enter the following command to copy the microcode files to &quot; /<span
+class=SpellE>etc</span>/microcode &quot; <span class=GramE>directory :</span> <br>
+&nbsp;&nbsp; cp <span style='color:black'>/<span class=SpellE>tmp</span>/<span
+class=SpellE>fwupdate</span>/</span> PM1735<span style='color:black'>/*</span>&nbsp;<span
+style='mso-spacerun:yes'>  </span>/<span class=SpellE>etc</span>/microcode <o:p></o:p></span></p>
+
+<h3><a name="_Toc96833255"></a><a name="_Toc96833185"></a><a name="_Toc96832397"></a><a
+name="_Toc46224676"></a><a name=5.0.1></a><span style='mso-bookmark:_Toc96833255'><span
+style='mso-bookmark:_Toc96833185'><span style='mso-bookmark:_Toc96832397'><span
+style='mso-bookmark:_Toc46224676'><span style='font-size:9.0pt;font-family:
+"Times New Roman",serif;mso-fareast-font-family:"Times New Roman"'>2.3.2
+Internet <st1:stockticker w:st="on">RPM</st1:stockticker> package</span></span></span></span></span><span
+style='font-size:9.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'> <o:p></o:p></span></h3>
+
+<p style='margin:0in'><b><span style='font-size:10.0pt;color:black'>Note:</span></b><span
+style='font-size:10.0pt;color:black'> The instructions that follow are specific
+AIX commands. AIX commands are CASE (lower and upper) SENSITIVE, <o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt;color:black'>and <b><i>must</i></b>
+be entered exactly as shown, including filenames.</span><span style='font-size:
+10.0pt'> <o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>a) Make a directory on an
+AIX system to receive the <st1:stockticker w:st="on">RPM</st1:stockticker>
+format file. <br>
+&nbsp;&nbsp;&nbsp; Enter:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class=SpellE>mkdir</span>
+/<span class=SpellE>tmp</span>/microcode <o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>b) Transfer the <st1:stockticker
+w:st="on">RPM</st1:stockticker> format file to the /<span class=SpellE>tmp</span>/microcode
+directory. <br>
+&nbsp;&nbsp;&nbsp; You'll see the filename is <b style='mso-bidi-font-weight:
+normal'>PM1735<span style='mso-bidi-font-weight:bold'>-SN4C-AIX.rpm</span></b> <o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>c) Unpack the file by
+executing the instructions below: <br>
+&nbsp;&nbsp;&nbsp; Enter the commands: <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>rpm -<span class=SpellE>ihv</span>
+--<span class=SpellE><span class=GramE>ignoreos</span></span><span class=GramE><span
+style='mso-spacerun:yes'>  </span>--</span>force </b><b style='mso-bidi-font-weight:
+normal'>PM1735<span style='mso-bidi-font-weight:bold'>-SN4C-AIX.rpm<span
+style='mso-spacerun:yes'>   </span></span></b><span style='mso-bidi-font-weight:
+bold'>;(please note, there are two dashes)</span><o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>The file size and checksum
+will be verified. <o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>The microcode files will
+be added to /<span class=SpellE>etc</span>/microcode/ <br>
+</span><span style='font-size:9.0pt'>&nbsp;</span><span style='font-size:10.0pt'>d)
+If you are using <span class=SpellE>stand alone</span> AIX <span class=SpellE>diag</span>
+(bootable USB flash or CD/DVD) to update drive’s microcode, transfer microcode
+files to a USB drive and place it in “/<span class=SpellE>etc</span>/microcode”
+directory<span style='color:black'>. <br>
+<span style='mso-spacerun:yes'>    </span>Please refer to this page for USB
+flash drive usage<span style='mso-spacerun:yes'>   </span><br>
+<span style='mso-spacerun:yes'>    </span></span></span><a
+href="https://www.ibm.com/support/pages/using-and-taking-advantage-usb-devices-and-aix">https://www.ibm.com/support/pages/using-and-taking-advantage-usb-devices-and-aix</a><a
+name=6.0.0></a></p>
+
+<p style='margin:0in'><span style='font-size:9.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin:0in'><b><span style='font-size:9.0pt'>========================================================<span
+style='color:#3333FF'><o:p></o:p></span></span></b></p>
+
+<h2><a name="_Toc46224677"></a><a name="_Toc96833257"></a><a name="_Toc96833187"></a><a
+name="_Toc96832399"><span style='mso-bookmark:_Toc96833187'><span
+style='mso-bookmark:_Toc96833257'><span style='mso-bookmark:_Toc46224677'><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'>2.4 Microcode Download Procedure</span></span></span></span></a><span
+style='font-size:12.0pt;font-family:"Times New Roman",serif;mso-fareast-font-family:
+"Times New Roman"'> <o:p></o:p></span></h2>
+
+<p><i><span style='font-size:10.0pt'>Warning:</span></i><span style='font-size:
+10.0pt'> Do not power off the system or the drive during microcode download as
+this may permanently damage the disk drive <o:p></o:p></span></p>
+
+<p><b><span style='font-size:10.0pt'>NOTE:</span></b><span style='font-size:
+10.0pt'> Please save current and older versions of the microcode update files
+in case you need to restore your system. <o:p></o:p></span></p>
+
+<p><i><span style='font-size:10.0pt'>Caution:</span></i><span style='font-size:
+10.0pt'> The microcode download process is nondestructive to the hard disks;
+however, as a precaution, ensure that a backup operation has been performed on
+the affected systems PRIOR to the microcode installation. <o:p></o:p></span></p>
+
+<p><i><span style='font-size:10.0pt'>Can microcode be installed Concurrently?</span></i><span
+style='font-size:10.0pt'><span style='mso-spacerun:yes'>  </span>YES<br>
+<i>Is system reboot needed to activate the microcode: </i>Yes if <span
+class=SpellE>stand alone</span> diagnostics CD is used, NO if concurrent
+diagnostics is used. <o:p></o:p></span></p>
+
+<p><i><span style='font-size:10.0pt'>Installation Time: </span></i><span
+style='font-size:10.0pt'>Approximately 20 minutes/drive if <span class=SpellE>stand
+alone</span> diagnostics is used(using Diagnostics CD); Approximately 5
+minutes/drive if concurrent diagnostics is used. <o:p></o:p></span></p>
+
+<p class=Heading-5><b><span style='font-size:10.0pt'>2.4.1 Concurrent Download<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'>1. No system power cycle OR a partition
+reboot is required prior to microcode download is microcode download is done
+concurrently.</span><span style='font-size:9.0pt;font-family:"Helvetica",sans-serif'><o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>2. When system comes up,
+within 24 hours of reboot, Type <span class=SpellE>diag</span> at the AIX
+prompt. <br>
+3. Select the &quot;Task Selection&quot; from diagnostics menu. <br>
+4. Select &quot;Microcode Download&quot; from &quot;Task Selection&quot; menu. <br>
+5. <span style='color:black'>Select resource that microcode will be applied to
+(i.e.; nvme0), then press &quot;F7&quot; to <span class=GramE>commit..</span></span>
+<br>
+6- A small screen displays the message &quot; *** NOTICE**<span class=GramE>*&nbsp;
+The</span> microcode installation occurs while the attached drives are
+available for use..... &quot; <br>
+&nbsp;&nbsp;&nbsp; Press enter to continue <br>
+7.&nbsp; Select the source for microcode, use arrow key to go up/down, <span
+class=GramE>Enter</span> to continue. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+/<span class=SpellE>etc</span>/microcode <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span class=SpellE>usb</span> mass storage<o:p></o:p></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'><span
+style='mso-spacerun:yes'> </span><span style='color:black'>&nbsp;&nbsp; - Use /<span
+class=SpellE>etc</span>/microcode if microcode file is in the system</span> <br>
+&nbsp; &nbsp; - Use “<span class=SpellE>usb</span> mass storage” if using <span
+class=SpellE>usb</span> flash drive<o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>8- Display shows a list of <span
+class=SpellE>microcodes</span> available for the selected drive, highlight
+option &quot;<span class=GramE>M&nbsp; <span style='color:black;mso-color-alt:
+windowtext;background:white'>534</span></span><span style='color:black;
+mso-color-alt:windowtext;background:white'>e3443</span>&quot;, the latest
+microcode for the drive and press ENTER. <br>
+<span style='mso-spacerun:yes'>   </span>A message may warn you that current
+level of microcode is not available on the media, press ENTER to continue. <o:p></o:p></span></p>
+
+<p><span style='font-size:10.0pt'>9. You will receive a msg. &quot;Current
+Microcode is....&quot; and &quot;Download has completed successfully&quot; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span class=GramE>&nbsp;&nbsp; (</span>this will take a
+several minutes) <br>
+10. Return to the Tasks Selection menu and repeat this procedure for each <span
+class=SpellE>nvme</span> (in the same partition) that requires this microcode. <br>
+11. Exit diagnostic<br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<p><b style='mso-bidi-font-weight:normal'><span style='font-size:9.0pt;
+color:blue'>2.4.2 Standalone (Service Mode) Download<o:p></o:p></span></b></p>
+
+<p><span style='font-size:10.0pt;mso-bidi-font-weight:bold'>This procedure is
+used for all drives including <span class=SpellE>rootvg</span> or paging space
+drives</span><span style='font-size:10.0pt'> <br>
+1. Properly shutdown the system. <br>
+2. Boot up the system in standalone diagnostics mode with the AIX <span
+class=SpellE>diag</span> CD/DVD or USB Thumb drive <br>
+3. Select the &quot;Task Selection&quot; from diagnostics menu. <br>
+4. Select &quot;Microcode Download&quot; from &quot;Task Selection&quot; menu. <br>
+5. <span style='color:black'>Select resource that microcode will be applied to
+and PRESS ENTER.</span> <br>
+<span style='color:black'>6. Press &quot;F7&quot; to commit.</span> <br>
+<span style='color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (The current microcode
+level of the resource you selected earlier will be displayed at the top of the
+screen)</span> <br>
+7. Make the following selections on the next screen: <br>
+<span style='color:black'>&nbsp;&nbsp;&nbsp; file system<br>
+<span style='mso-spacerun:yes'>      </span>/<span class=SpellE>etc</span>/microcode<br>
+<span style='mso-spacerun:yes'>      </span><span class=SpellE>usb</span> mass
+storage <span class=GramE><span style='mso-spacerun:yes'>   </span>(</span>ISO
+9660 file system format)<o:p></o:p></span></span></p>
+
+<p style='margin:0in'><span style='font-size:10.0pt'>8. <span style='color:
+black'>You will receive a msg. &quot;Current Microcode is....&quot; and
+&quot;Download has completed successfully&quot;</span> <br>
+<span style='color:black'>&nbsp;&nbsp;&nbsp;&nbsp;<span class=GramE>&nbsp;&nbsp;
+(</span>this may take a few minutes)</span> <br>
+9. Return to the Tasks Selection menu and repeat this procedure for each hard
+disk that requires this microcode. <br>
+10. Exit diagnostic and reboot system in normal mode<o:p></o:p></span></p>
+
+<p style='margin-top:0in;margin-right:0in;margin-bottom:0in;margin-left:.5in'><b><span
+style='font-size:9.0pt;color:blue'><span
+style='mso-spacerun:yes'>               </span><span style='mso-bidi-font-style:
+italic'><span style='mso-spacerun:yes'>              </span><o:p></o:p></span></span></b></p>
+
+<p style='margin:0in'><b><span lang=DA style='font-size:9.0pt;mso-ansi-language:
+DA'>======================================================<o:p></o:p></span></b></p>
+
+<h1 style='margin:0in'><a name="_Toc46224678"></a><a name="_Toc442342421"></a><a
+name="_Toc448994166"><span style='mso-bookmark:_Toc442342421'><span
+style='mso-bookmark:_Toc46224678'><span lang=DA style='font-size:14.0pt;
+mso-ansi-language:DA'>3.<span style='mso-spacerun:yes'>   </span>Linux
+Operating System</span></span></span></a><span lang=DA style='font-size:14.0pt;
+mso-ansi-language:DA'><u1:p></u1:p><o:p></o:p></span></h1>
+
+<p class=MsoNormal><span lang=DA style='mso-ansi-language:DA'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'>Note: The following procedure is for Red
+Hat Linux, please use microcode file package </span></b><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;color:black;mso-color-alt:windowtext'>PM1735-SN45<span
+style='mso-bidi-font-weight:bold'>-LINUX</span>.tgz for Ubuntu</span></b><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><span class=left><span
+style='font-size:10.0pt;color:black;mso-color-alt:windowtext'>tar -C-</span></span><span
+class=SpellE><span style='font-size:10.0pt;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;color:black;mso-color-alt:windowtext'>xzvf</span></span><span
+class=left><span style='font-size:10.0pt;color:black;mso-color-alt:windowtext'>
+</span></span><b style='mso-bidi-font-weight:normal'><span style='font-size:
+10.0pt;color:black;mso-color-alt:windowtext'>PM1735-SN4A<span style='mso-bidi-font-weight:
+bold'>-LINUX</span>.tgz</span></b><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'><br>
+</span><span style='color:#3333FF'>Red Hat Enterprise Linux for IBM Power LE<o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<h2><a name="_Toc27053010"></a><a name="_Toc46224679"></a><a name=3.1></a><span
+style='mso-bookmark:_Toc27053010'><span style='mso-bookmark:_Toc46224679'><span
+style='font-size:12.0pt'>3.1 Determine the Current Microcode Level for Linux:</span></span></span><span
+style='mso-bookmark:_Toc46224679'></span><span style='mso-bookmark:_Toc27053010'></span><span
+style='font-size:12.0pt;color:black'><o:p></o:p></span></h2>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>These steps assume you are logged in with root permissions.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><b><i><span style='color:#2F5597;
+mso-themecolor:accent1;mso-themeshade:191;mso-style-textfill-fill-color:#2F5597;
+mso-style-textfill-fill-themecolor:accent1;mso-style-textfill-fill-alpha:100.0%;
+mso-style-textfill-fill-colortransforms:lumm=75000'>Prerequisites for Red Hat
+Linux:</span></i></b><span style='color:#2F5597;mso-themecolor:accent1;
+mso-themeshade:191;mso-style-textfill-fill-color:#2F5597;mso-style-textfill-fill-themecolor:
+accent1;mso-style-textfill-fill-alpha:100.0%;mso-style-textfill-fill-colortransforms:
+lumm=75000'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>Use the&nbsp;<span class=SpellE>ibm</span>-power-repo to configure
+the repositories and then use yum to download the&nbsp;<span class=SpellE>nvme</span>-cli
+package.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'><a
+href="http://www14.software.ibm.com/support/customercare/sas/f/lopdiags/home.html"><span
+style='color:#551A8B'>http://www14.software.ibm.com/support/customercare/sas/f/lopdiags/home.html</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>1. Download the IBM Linux on Power Tools Repository configuration
+RPM file available at:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'><a
+href="http://www14.software.ibm.com/webapp/set2/sas/f/lopdiags/yum.html"><span
+style='color:#551A8B'>http://www14.software.ibm.com/webapp/set2/sas/f/lopdiags/yum.html</span></a><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>2. Copy the file to the target system and install the RPM<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>#&nbsp;rpm&nbsp;-<span class=SpellE>ivh</span>&nbsp;<span
+class=SpellE>ibm</span>-power-repo-<span class=SpellE>latest.noarch.rpm</span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>3. To add the Tools Repository to the package management
+configuration, run the following command as root user (or with root privilege)
+and accept the Licensing agreement.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'># /opt/<span class=SpellE>ibm</span>/lop/configure<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><b><i><span style='font-size:10.0pt;
+color:black'>Instructions for installing&nbsp;<span class=SpellE>nvme</span>-cli
+tool using Red Hat Enterprise Linux</span></i></b><span style='font-size:10.0pt;
+color:black'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>To list the currently enabled repositories, enter:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>#&nbsp;yum&nbsp;<span class=SpellE>repolist</span>&nbsp;enabled<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>Install the&nbsp;<span class=SpellE>nvme</span>-cli package,
+enter:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>#&nbsp;yum&nbsp;install&nbsp;<span class=SpellE>nvme</span>-cli<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'>After&nbsp;<span class=SpellE>nvme</span>-cli
+is installed on the system,</span></b><span style='font-size:10.0pt;color:black;
+mso-color-alt:windowtext'>&nbsp;<b>to check the current microcode level for the
+adapter enter the following command:</b></span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'>#&nbsp;<span class=SpellE>nvme</span>&nbsp;list</span><span
+style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'>&nbsp;</span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><b><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'>Note</span></b><span style='font-size:
+10.0pt;color:black;mso-color-alt:windowtext'>: &quot;<span class=SpellE>nvme</span>&nbsp;list&quot;
+command uses&nbsp;<span class=SpellE>libudev-devel</span>, if it doesn't work,
+may need to install “<span class=SpellE>libudev-devel</span>&quot;</span><span
+style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'>&nbsp;</span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>1) Type &quot;<span class=SpellE>nvme</span>&nbsp;list&quot;<br>
+2) The column “FW Rev” will list the firmware version.&nbsp;&nbsp;For example:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>&nbsp;# <span class=SpellE>nvme</span> list<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>Node<span style='mso-spacerun:yes'>       </span><span
+style='mso-spacerun:yes'>                        </span>SN<span
+style='mso-spacerun:yes'>                                 </span>Model<span
+style='mso-spacerun:yes'>                             </span>Namespace<span
+style='mso-spacerun:yes'>         </span>Usage<span
+style='mso-spacerun:yes'>                       </span>Format<span
+style='mso-spacerun:yes'>              </span>FW Rev<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>----------------<span style='mso-spacerun:yes'>    
+</span>------------------------<span style='mso-spacerun:yes'>     
+</span>-----------------------------------<span style='mso-spacerun:yes'>   
+</span>---------------<span style='mso-spacerun:yes'>  
+</span>-------------------------<span style='mso-spacerun:yes'> 
+</span>------------------<span style='mso-spacerun:yes'>   </span>-------------<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>/dev/nvme0n1<span style='mso-spacerun:yes'>   
+</span>S5H0NE0MC00084<span style='mso-spacerun:yes'>     </span>3.2TB <span
+class=SpellE>NVMe</span> Gen4 U.2 SSD<span
+style='mso-spacerun:yes'>             </span>1<span
+style='mso-spacerun:yes'>            </span>3.<span class=GramE>20<span
+style='mso-spacerun:yes'>  </span>TB</span> /<span style='mso-spacerun:yes'>  
+</span>3.20<span style='mso-spacerun:yes'>  </span>TB<span
+style='mso-spacerun:yes'>      </span>4 KiB +<span style='mso-spacerun:yes'> 
+</span>0 B<span style='mso-spacerun:yes'>   </span>REV.SN4C<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>If the&nbsp;<b>Firmware Version</b>&nbsp;is below than&nbsp;SN45&nbsp;then
+you should update the microcode.<o:p></o:p></span></p>
+
+<h2><a name="_Toc46224680"></a><a name="_Toc27053011"><span style='mso-bookmark:
+_Toc46224680'><span style='font-size:12.0pt'>3.2 Downloading and Unpacking the
+Firmware Update Package</span></span></a><span style='mso-bookmark:_Toc46224680'></span><span
+style='mso-bookmark:_Toc27053011'></span><span style='font-size:12.0pt;
+color:black'><o:p></o:p></span></h2>
+
+<p class=MsoNormal style='background:white'><a name=4.2></a><a name=5.0></a><span
+style='font-size:10.0pt;color:black;mso-color-alt:windowtext'>1. Download
+feature code ES1E/ES1G/ES5V package from&nbsp;<span class=SpellE>FixCentral</span>,
+and transfer the file, to a temporary directory on the target server such as /<span
+class=SpellE>tmp</span>.</span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'>2. Unpack the package</span><span
+style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+mso-fareast-font-family:"Times New Roman";mso-fareast-theme-font:major-fareast;
+color:black;mso-color-alt:windowtext'><span style='mso-spacerun:yes'>    
+</span>rpm</span><span style='font-size:10.0pt;color:black;mso-color-alt:windowtext'>
+-</span><span class=SpellE><span style='font-size:10.0pt;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast;color:black;mso-color-alt:
+windowtext'>ivh</span></span><span style='font-size:10.0pt;color:black;
+mso-color-alt:windowtext'> <span style='background:white'>--</span></span><span
+class=SpellE><span style='font-size:10.0pt;mso-fareast-font-family:"Times New Roman";
+mso-fareast-theme-font:major-fareast;color:black;mso-color-alt:windowtext;
+background:white'>ignoreos</span></span><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'> <b style='mso-bidi-font-weight:normal'>PM1735-SN4C<span
+style='mso-bidi-font-weight:bold'>-LINUX</span>.rpm</b></span><b
+style='mso-bidi-font-weight:normal'><span style='font-size:10.0pt'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'>3. The microcode package extracts the
+firmware file to the&nbsp;/lib/firmware/&nbsp;directory</span><span
+style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black;mso-color-alt:windowtext'>&nbsp;</span><span style='font-size:10.0pt'><o:p></o:p></span></p>
+
+<h2><a name="_Toc46224681"></a><a name="_Toc27053012"><span style='mso-bookmark:
+_Toc46224681'><span style='font-size:12.0pt'>3.3 Verifying microcode before
+download and notes</span></span></a><span style='mso-bookmark:_Toc46224681'></span><span
+style='mso-bookmark:_Toc27053012'></span><span style='font-size:12.0pt;
+color:black'><o:p></o:p></span></h2>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+background:white'><b><span style='font-size:10.0pt;color:black'>NOTE:</span></b><span
+style='font-size:10.0pt;color:black'>&nbsp;Microcode download must be performed
+separately for each <span class=SpellE>nvme</span> under distinct Logical
+Partitions (LPAR's).<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Please save current and older versions of the microcode update files in case
+you need to restore your system.<br>
+<br>
+Please verify the file size and checksum of the raw microcode files matches the
+below.<b><br>
+<span class=SpellE>Filesize</span>:&nbsp; 6178816<br>
+Checksum:&nbsp; 32368</b><br>
+For&nbsp;<u>Linux</u>:&nbsp; &quot;ls -l /lib/firmware/<span style='background:
+white'>A180010C.534e3443</span>&quot; to verify&nbsp;<span class=SpellE>Filesize</span>.<br>
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;<span
+style='mso-spacerun:yes'>    </span>&quot;sum&nbsp;/lib/firmware/<span
+style='background:white'>A180010C.534e3443</span>&quot; to verify Checksum.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+background:white'><span style='font-size:10.0pt;color:black'>For systems that
+have LPAR installed, the microcode file must be placed on all partitions that
+have(owns)&nbsp;an&nbsp;<span class=SpellE>NVMe</span>&nbsp;device in order to
+update the code.&nbsp; <br>
+Follow this procedure for each partition:<br>
+&nbsp;&nbsp;&nbsp; <o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:43.8pt;mso-add-space:auto;text-indent:-.25in;mso-list:l0 level1 lfo4;
+background:white'><![if !supportLists]><span style='font-size:10.0pt;
+color:black'><span style='mso-list:Ignore'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;color:black'>Log&nbsp;into
+the target partition.<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:43.8pt;mso-add-space:auto;text-indent:-.25in;mso-list:l0 level1 lfo4;
+background:white'><![if !supportLists]><span style='font-size:10.0pt;
+color:black'><span style='mso-list:Ignore'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;color:black'>Type:
+&quot;cd /lib/firmware&quot;<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:43.8pt;mso-add-space:auto;text-indent:-.25in;mso-list:l0 level1 lfo4;
+background:white'><![if !supportLists]><span style='font-size:10.0pt;
+color:black'><span style='mso-list:Ignore'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;color:black'>SFTP&nbsp;to
+the partition that has the media bay assigned. (<span class=SpellE>ie</span>.&nbsp;
+&quot;sftp&nbsp;partition1.ibm.com&quot;)<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:43.8pt;mso-add-space:auto;text-indent:-.25in;mso-list:l0 level1 lfo4;
+background:white'><![if !supportLists]><span style='font-size:10.0pt;
+color:black'><span style='mso-list:Ignore'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;color:black'>Type:
+&quot;cd /lib/firmware&quot;<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpMiddle style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:43.8pt;mso-add-space:auto;text-indent:-.25in;mso-list:l0 level1 lfo4;
+background:white'><![if !supportLists]><span style='font-size:10.0pt;
+color:black'><span style='mso-list:Ignore'>5.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;color:black'>Type:
+&quot;get <span style='background:white'>A180010C.534e3443</span>&quot;<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:43.8pt;mso-add-space:auto;text-indent:-.25in;mso-list:l0 level1 lfo4;
+background:white'><![if !supportLists]><span style='font-size:10.0pt;
+color:black'><span style='mso-list:Ignore'>6.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]><span style='font-size:10.0pt;color:black'>Type:
+&quot;quit&quot;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><a name="_Toc27053013"></a><a
+name="_Toc46224682"></a><a name=5.1></a><a name=5.2></a><span style='mso-bookmark:
+_Toc27053013'><span style='mso-bookmark:_Toc46224682'><span class=Heading2Char><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt'>3.4 Microcode
+Download Procedure-</span></span></span></span><span style='mso-bookmark:_Toc27053013'><span
+style='mso-bookmark:_Toc46224682'><span class=SpellE><span class=Heading2Char><span
+style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:12.0pt;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:major-fareast'>NVMe</span></span></span></span></span><span
+style='mso-bookmark:_Toc27053013'><span style='mso-bookmark:_Toc46224682'><span
+class=Heading2Char><span style='mso-ansi-font-size:12.0pt;mso-bidi-font-size:
+12.0pt'>&nbsp;Adapters for Linux</span></span></span></span><span
+style='mso-bookmark:_Toc46224682'></span><span style='mso-bookmark:_Toc27053013'></span><b><span
+style='font-size:10.0pt;color:black'><br>
+</span></b><span style='font-size:10.0pt;color:black'><br>
+1) Type &quot;<span class=SpellE>nvme</span>&nbsp;list&quot; and press
+&quot;Enter&quot;.&nbsp;&nbsp;This will list <span class=GramE>all of</span>
+the&nbsp;<span class=SpellE>NVMe</span>&nbsp;adapters in your
+partition.&nbsp;&nbsp;In the Node column, the&nbsp;<span class=SpellE>NVMe</span>&nbsp;adapters
+will be listed as&nbsp;<b>/dev/nvme#n1</b>&nbsp;where # is the number of the
+device.<br>
+2) For each&nbsp;<span class=SpellE>NVMe</span>&nbsp;adapter to be update,
+issue the following commands:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:-.25in;background:white'><span
+style='font-size:10.0pt;color:black'>a)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Type “<span
+class=SpellE>nvme</span>&nbsp;<span class=SpellE>fw</span>-log /dev/<span
+class=SpellE>nvme</span>&lt;#&gt;” and press “Enter”, where &lt;#&gt; is the
+number of the device.&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'>&nbsp;<span style='mso-spacerun:yes'>               </span>For
+example, for device /dev/nvme0n1, type <o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'><span style='mso-spacerun:yes'>                </span>“<span
+class=SpellE>nvme</span>&nbsp;<span class=SpellE>fw</span>-log /dev/nvme0” and
+press “Enter”.&nbsp;&nbsp;This will list the firmware level currently loaded on
+the adapter as well as the number of slots in the adapter.&nbsp;&nbsp;<br>
+<span style='mso-spacerun:yes'>               </span>These 3 slots are listed
+as frs1, frs3.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'><span style='mso-spacerun:yes'>      
+</span>b)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Download and activate firmware to the
+adapter by typing:<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'><span style='mso-spacerun:yes'>               </span>Note that
+there are 4 FW “slots” in this <span class=SpellE>nvme</span>, each slot must
+be updated AND activated, example below is for nvme0<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;background:white'><span
+style='font-size:10.0pt;color:black'>&nbsp;<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:1.0in;mso-add-space:auto;
+background:white'><span class=SpellE><span style='font-size:10.0pt;color:black'>nvme</span></span><span
+style='font-size:10.0pt;color:black'>&nbsp;<span class=SpellE>fw</span>-download
+/dev/nvme0 --<span class=SpellE>fw</span>=/lib/firmware/<span style='background:
+white'>A180010C.534e3443</span><o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;mso-add-space:auto;
+background:white'><span class=SpellE><span style='font-size:10.0pt;color:black'>nvme</span></span><span
+style='font-size:10.0pt;color:black'>&nbsp;<span class=SpellE>fw</span>-activate
+/dev/nvme0 -a 0 –s 1<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'><span style='mso-tab-count:2'>                                </span><o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:.5in;text-indent:.5in;background:white'><span
+style='font-size:10.0pt;color:black'>Repeat for all slots (-s 2; -s 3)<o:p></o:p></span></p>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.0pt;
+color:black'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoListParagraphCxSpFirst style='margin-left:1.0in;mso-add-space:auto;
+background:white'><span class=SpellE><span style='font-size:10.0pt;color:black'>nvme</span></span><span
+style='font-size:10.0pt;color:black'>&nbsp;<span class=SpellE>fw</span>-activate
+/dev/nvme0 -a 3 –s 3<span style='mso-spacerun:yes'>   </span></span><span
+style='font-size:10.0pt;font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";color:black;mso-char-type:symbol;
+mso-symbol-font-family:Wingdings'><span style='mso-char-type:symbol;mso-symbol-font-family:
+Wingdings'>ß</span></span><span style='font-size:10.0pt;color:black'> this step
+may be omitted if the <span class=SpellE>nvme</span> device does not support
+the function<o:p></o:p></span></p>
+
+<p class=MsoListParagraphCxSpLast style='margin-left:1.0in;mso-add-space:auto;
+background:white'><span class=SpellE><span style='font-size:10.0pt;color:black'>nvme</span></span><span
+style='font-size:10.0pt;color:black'>&nbsp;reset /dev/nvme0<o:p></o:p></span></p>
+
+<h1 style='margin:0in'><span lang=DA style='font-size:14.0pt;mso-ansi-language:
+DA'>4.<span style='mso-spacerun:yes'>   </span>Revisions<o:p></o:p></span></h1>
+
+<p class=MsoNormal><span lang=DA style='mso-ansi-language:DA'><span
+style='mso-spacerun:yes'>        </span><o:p></o:p></span></p>
+
+<p class=MsoListParagraph style='margin-left:1.0in;mso-add-space:auto;
+background:white'><span style='font-size:10.0pt;color:black'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
